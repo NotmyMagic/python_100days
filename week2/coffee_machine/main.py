@@ -40,7 +40,7 @@ def start():
         return
     elif choice == "report":
         for key in resources:
-            print(f"{key} {resources[key]}")
+            print(f"{key}: {resources[key]}")
         print(f"Money: ${round(cashed_money, 2)}")
         start()
     elif choice == "esspresso":
@@ -100,7 +100,7 @@ def get_drink(drink_choice):
                         resources[key] -= MENU[drink]["ingrediants"][item]
                         if int(resources[key]) < 0:
                             resources[key] += MENU[drink]["ingrediants"][item]
-                            print("not enough resources")
+                            print(f"Sorry not enough {key}")
                             return False
             return True
 
