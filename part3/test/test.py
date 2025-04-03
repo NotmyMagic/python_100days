@@ -68,10 +68,19 @@
 # string
 # range
 # tuple
+# List
 # [_ for _ in _ if _]
 
+# Dictionary
+# {_:_ for (_,_) in _.items() if _}
 
-# names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
+import random
+names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
+students_scores = {student:random.randint(50, 100) for student in names}
+print(students_scores)
+
+passed_students = {student:score for (student, score) in students_scores.items() if score > 70}
+print(passed_students)
 
 # long_names = [name.upper() for name in names if len(name) > 5]
 

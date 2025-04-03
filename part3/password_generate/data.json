@@ -1,0 +1,10 @@
+{
+    "test": {
+        "email": "some-email@gmail.com",
+        "password": "8*Jz$U6Rxx7jq"
+    },
+    "this": {
+        "email": "some-email@gmail.com",
+        "password": "that"
+    }
+}

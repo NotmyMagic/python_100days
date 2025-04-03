@@ -42,4 +42,6 @@ while len(guessed_states) < 50:
 
 
 
+
+
 screen.exitonclick()
