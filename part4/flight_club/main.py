@@ -25,7 +25,7 @@ data_manager.update_destination_codes()
 
 
 tomorrow = datetime.now() + timedelta(days=1)
-six_month_from_today = datetime.now() + timedelta(days=(6*30))
+two_month_from_today = datetime.now() + timedelta(days=(2*30))
 
 for destination in sheet_data:
     print(f"Getting flights for {destination["city"]}...")
